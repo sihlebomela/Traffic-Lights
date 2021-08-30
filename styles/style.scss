@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*{
+* {
     font-family: Poppins;
     user-select: none;
     padding: 0;
     margin: 0;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
 }
+
 @mixin flexCenter {
     display: flex;
     flex-direction: column;
@@ -20,43 +22,46 @@ html, body {
     align-items: center;
 }
 
-.light-container{
+.light-container {
     position: relative;
-    background: linear-gradient(to right,rgb(0, 0, 0),rgb(51, 51, 51));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(51, 51, 51));
     width: 200px;
     height: auto;
     @include flexCenter;
     margin: auto;
     padding: 30px;
     border-radius: 120px;
-    border:solid 6px;
-    border-color: #2a2a2a #3a3f3a #2a2a2a #2a2a2a ;
+    border: solid 6px;
+    border-color: #2a2a2a #3a3f3a #2a2a2a #2a2a2a;
 
-    .red{
+    .red {
         background-color: red;
     }
-    
-    .orange{
+
+    .orange {
         background-color: orange;
     }
-    .green{
-        background-color: green;   
+
+    .green {
+        background-color: green;
     }
 }
 
-.orange, .green, .red{
+.orange,
+.green,
+.red {
     width: 130px;
     height: 130px;
     margin: 5px;
     border-radius: 50%;
     opacity: 0.2;
-    filter:blur(3px);
+    filter: blur(3px);
 }
 
-.pole{
+.pole {
     margin: auto;
     margin-top: -10px;
-    background: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(51, 51, 51));
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(51, 51, 51));
     width: 100px;
     height: 100px;
 }
