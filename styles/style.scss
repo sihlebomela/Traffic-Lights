@@ -28,31 +28,28 @@ html, body {
     border-radius: 120px;
     border:solid 6px;
     border-color: #2a2a2a #3a3f3a #2a2a2a #2a2a2a ;
+
+    .red{
+        background-color: red;
+    }
+    
+    .orange{
+        background-color: orange;
+    }
+    .green{
+        background-color: green;   
+    }
 }
 
 .orange, .green, .red{
+    width: 130px;
+    height: 130px;
     margin: 5px;
     border-radius: 50%;
     opacity: 0.2;
     filter:blur(3px);
 }
 
-.red{
-    background-color: red;
-    width: 130px;
-    height: 130px;
-}
-
-.orange{
-    background-color: orange;
-    width: 130px;
-    height: 130px;
-}
-.green{
-    background-color: green;
-    width: 130px;
-    height: 130px;
-}
 .pole{
     margin: auto;
     margin-top: -10px;
