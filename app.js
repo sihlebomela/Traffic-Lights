@@ -1,7 +1,8 @@
 // By: trinitysenpai 
-var redLight = document.querySelector(".red");
-var orangeLight = document.querySelector(".orange");
-var greenLight = document.querySelector(".green");
+let redLight = document.querySelector(".red");
+let orangeLight = document.querySelector(".orange");
+let greenLight = document.querySelector(".green");
+let lights = [redLight, orangeLight, greenLight];
 
 function lightCycle() {
 	turn_off_allLights(); //? turn off all lights
@@ -54,9 +55,9 @@ function turn_off_greenLight() {
 }
 
 function turn_off_allLights() {
-	turn_off_redLight();
-	turn_off_orangeLight();
-	turn_off_greenLight();
+	lights.forEach(light => {
+		turnOffLight(light);
+	})
 }
 
 //call function to start code
