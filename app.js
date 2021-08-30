@@ -61,3 +61,8 @@ function turn_off_allLights() {
 
 //call function to start code
 lightCycle();
+
+function turnOffLight(light) {
+	light.style.opacity = 0.8;
+	light.style.filter = "brightness(0.4)";
+}
