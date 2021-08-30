@@ -67,3 +67,8 @@ function turnOffLight(light) {
 	light.style.opacity = 0.8;
 	light.style.filter = "brightness(0.4)";
 }
+
+function turnOnLight() {
+	greenLight.style.opacity = 1;
+	greenLight.style.filter = "brightness(120)";
+}
