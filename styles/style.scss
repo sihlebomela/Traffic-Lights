@@ -13,16 +13,19 @@ html, body {
     display: grid;
     place-items: center;
 }
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .light-container{
     position: relative;
     background: linear-gradient(to right,rgb(0, 0, 0),rgb(51, 51, 51));
     width: 200px;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     margin: auto;
     padding: 30px;
     border-radius: 120px;
