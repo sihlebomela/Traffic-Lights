@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  font-family: Poppins;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.light-container {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(#333333));
+  background: linear-gradient(to right, black, #333333);
+  width: 200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 30px;
+  border-radius: 120px;
+  border: solid 6px;
+  border-color: #2a2a2a #3a3f3a #2a2a2a #2a2a2a;
+}
+
+.light-container .red {
+  background-color: red;
+}
+
+.light-container .orange {
+  background-color: orange;
+}
+
+.light-container .green {
+  background-color: green;
+}
+
+.orange, .green, .red {
+  width: 130px;
+  height: 130px;
+  margin: 5px;
+  border-radius: 50%;
+  opacity: 0.2;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.pole {
+  margin: auto;
+  margin-top: -10px;
+  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#333333));
+  background: linear-gradient(to bottom right, black, #333333);
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */
