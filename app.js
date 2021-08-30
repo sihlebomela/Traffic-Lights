@@ -6,15 +6,14 @@ let lights = [redLight, orangeLight, greenLight];
 
 function lightCycle() {
 	turn_off_allLights(); //? turn off all lights
-	turn_on_redLight();
+	turnOnLight(redLight);
 	setTimeout(() => {
-		turn_off_redLight();
-		turn_on_orangeLight();
+		turnOnLight(orangeLight);
 	}, 2000);
 
 	setTimeout(() => {
-		turn_off_orangeLight();
-		turn_on_greenLight();
+		turnOffLight(orangeLight);
+		turnOnLight(greenLight);
 	}, 4000);
 
 	setTimeout(() => {
@@ -68,7 +67,7 @@ function turnOffLight(light) {
 	light.style.filter = "brightness(0.4)";
 }
 
-function turnOnLight() {
-	greenLight.style.opacity = 1;
-	greenLight.style.filter = "brightness(120)";
+function turnOnLight(light) {
+	light.style.opacity = 1;
+	light.style.filter = "brightness(120)";
 }
