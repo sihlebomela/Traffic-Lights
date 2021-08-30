@@ -5,9 +5,10 @@ let greenLight = document.querySelector(".green");
 let lights = [redLight, orangeLight, greenLight];
 
 function lightCycle() {
-	turn_off_allLights(); //? turn off all lights
+	turnOffAllLights(); //? turn off all lights
 	turnOnLight(redLight);
 	setTimeout(() => {
+		turnOffLight(redLight);
 		turnOnLight(orangeLight);
 	}, 2000);
 
@@ -21,46 +22,12 @@ function lightCycle() {
 	}, 6000);
 }
 
-//! functions to turn on lights
-function turn_on_redLight() {
-	redLight.style.opacity = 1;
-	redLight.style.filter = "brightness(120)";
-}
-
-function turn_on_orangeLight() {
-	orangeLight.style.opacity = 1;
-	orangeLight.style.filter = "brightness(120)";
-}
-
-function turn_on_greenLight() {
-	greenLight.style.opacity = 1;
-	greenLight.style.filter = "brightness(120)";
-}
-
-//! function to turn off lights
-function turn_off_redLight() {
-	redLight.style.opacity = 0.8;
-	redLight.style.filter = "brightness(0.4)";
-}
-
-function turn_off_orangeLight() {
-	orangeLight.style.opacity = 0.8;
-	orangeLight.style.filter = "brightness(0.4)";
-}
-
-function turn_off_greenLight() {
-	greenLight.style.opacity = 0.8;
-	greenLight.style.filter = "brightness(0.4)";
-}
-
-function turn_off_allLights() {
+function turnOffAllLights() {
 	lights.forEach(light => {
 		turnOffLight(light);
+		console.log(light);
 	})
 }
-
-//call function to start code
-lightCycle();
 
 function turnOffLight(light) {
 	light.style.opacity = 0.8;
@@ -71,3 +38,6 @@ function turnOnLight(light) {
 	light.style.opacity = 1;
 	light.style.filter = "brightness(120)";
 }
+
+//call function to start code
+lightCycle();
