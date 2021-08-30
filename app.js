@@ -25,7 +25,6 @@ function lightCycle() {
 function turnOffAllLights() {
 	lights.forEach(light => {
 		turnOffLight(light);
-		console.log(light);
 	})
 }
 
