@@ -5,7 +5,7 @@ let greenLight = document.querySelector(".green");
 let lights = [redLight, orangeLight, greenLight];
 
 function lightCycle() {
-	turnOffAllLights(); //? turn off all lights
+	turnOffAllLights(); //? turn off all lights 
 	turnOnLight(redLight);
 	setTimeout(() => {
 		turnOffLight(redLight);
